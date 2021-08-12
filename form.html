@@ -1,44 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
     <section class="section">
-        <form class="order-form" name="order-form">
-            <strong class="order-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ
-            </strong>
-            <input name="order-name" type="text" required minlength="2" placeholder="Ім’я" />
-            <input name="order-mail" type="email" required minlength="2" placeholder="Email" />
-            <select name="plastic" >
-                <option value="no">Види пластика</option>
-                <option value="300">300 мікрон</option>
-                <option value="200">200 мікрон</option>
-                <option value="100">100 мікрон</option>
-                <option value="support">Труднощі у виборі - ми допоможемо</option>
-            </select>
-            <select name="quality">
-                <option value="no">Якість друку</option>
-                <option value="300">300 мікрон</option>
-                <option value="200">200 мікрон</option>
-                <option value="100">100 мікрон</option>
-                <option value="support">Труднощі у виборі - ми допоможемо</option>
-            </select>
-            <select name="color">
-                <option value="no">Колір</option>
-                <option value="300">300 мікрон</option>
-                <option value="200">200 мікрон</option>
-                <option value="100">100 мікрон</option>
-                <option value="support">Труднощі у виборі - ми допоможемо</option>
-            </select>
-            <label for="comment">Повідомлення</label>
-            <textarea name="modal-comment" name="comment" id="comment" placeholder="Залишіть своє повідомлення"></textarea>
-            <p>*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</p>
-            <button type="submit">ВІДПРАВИТИ</button>
-        </form>
+      <form class="order-form" name="order-form">
+        <strong class="order-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ </strong>
+        <input
+          name="order-name"
+          type="text"
+          required
+          minlength="2"
+          placeholder="Ім’я"
+        />
+        <input
+          name="order-mail"
+          type="email"
+          required
+          minlength="2"
+          placeholder="Email"
+        />
+        <select name="plastic">
+          <option value="no">Види пластика</option>
+          <option value="300">300 мікрон</option>
+          <option value="200">200 мікрон</option>
+          <option value="100">100 мікрон</option>
+          <option value="support">Труднощі у виборі - ми допоможемо</option>
+        </select>
+        <select name="quality">
+          <option value="no">Якість друку</option>
+          <option value="300">300 мікрон</option>
+          <option value="200">200 мікрон</option>
+          <option value="100">100 мікрон</option>
+          <option value="support">Труднощі у виборі - ми допоможемо</option>
+        </select>
+        <select name="color">
+          <option value="no">Колір</option>
+          <option value="300">300 мікрон</option>
+          <option value="200">200 мікрон</option>
+          <option value="100">100 мікрон</option>
+          <option value="support">Труднощі у виборі - ми допоможемо</option>
+        </select>
+        <label for="comment">Повідомлення</label>
+        <textarea
+          name="modal-comment"
+          name="comment"
+          id="comment"
+          placeholder="Залишіть своє повідомлення"
+        ></textarea>
+        <p>*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</p>
+        <button type="submit">ВІДПРАВИТИ</button>
+      </form>
+      <address class="address-section">
+        <div class="address__tel">
+          <h2 class="caption">ТЕЛЕФОНИ</h2>
+          <ul class="tel__list">
+            <li class="tel__item">
+              <a href="tel:+380957384551" class="tel__link"
+                >+38 (095) -73-84-551</a
+              >
+            </li>
+            <li class="tel__item">
+              <a href="tel:+380980025235" class="tel__link"
+                >+38 (098) -00-25-235</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="address__mail">
+          <h2 class="caption">Email</h2>
+          <a class="address__mail--link" href="mailto:3dfreedom.info@gmail.com"
+            >3dfreedom.info@gmail.com</a
+          >
+        </div>
+        <div class="address__time">
+          <h2 class="caption">Робочий час</h2>
+          <ul class="time__list">
+            <li class="time__item">Пн-пт: з 8:00 до 19:00</li>
+            <li class="time__item">Сб, Нд: з 10:00 до 17:00</li>
+          </ul>
+        </div>
+        <div class="photo-puzzle"></div>
+      </address>
     </section>
-</body>
+  </body>
 </html>
