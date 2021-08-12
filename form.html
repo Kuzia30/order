@@ -8,8 +8,36 @@
 </head>
 <body>
     <section class="section">
-        <form action="" class="order-form">
-            
+        <form class="order-form" name="order-form">
+            <strong class="order-form__title">ЗВ’ЯЖІТЬСЯ З НАМИ
+            </strong>
+            <input name="order-name" type="text" required minlength="2" placeholder="Ім’я" />
+            <input name="order-mail" type="email" required minlength="2" placeholder="Email" />
+            <select name="plastic" >
+                <option value="no">Види пластика</option>
+                <option value="300">300 мікрон</option>
+                <option value="200">200 мікрон</option>
+                <option value="100">100 мікрон</option>
+                <option value="support">Труднощі у виборі - ми допоможемо</option>
+            </select>
+            <select name="quality">
+                <option value="no">Якість друку</option>
+                <option value="300">300 мікрон</option>
+                <option value="200">200 мікрон</option>
+                <option value="100">100 мікрон</option>
+                <option value="support">Труднощі у виборі - ми допоможемо</option>
+            </select>
+            <select name="color">
+                <option value="no">Колір</option>
+                <option value="300">300 мікрон</option>
+                <option value="200">200 мікрон</option>
+                <option value="100">100 мікрон</option>
+                <option value="support">Труднощі у виборі - ми допоможемо</option>
+            </select>
+            <label for="comment">Повідомлення</label>
+            <textarea name="modal-comment" name="comment" id="comment" placeholder="Залишіть своє повідомлення"></textarea>
+            <p>*Прикріпіть зображення/креслення/STL/Obj/CAD-модель</p>
+            <button type="submit">ВІДПРАВИТИ</button>
         </form>
     </section>
 </body>
