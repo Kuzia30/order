@@ -213,3 +213,72 @@ body {
   display: flex;
   width: 1200px;
 }
+.order-form__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.28;
+
+  color: #487996;
+}
+.form-input {
+  border-bottom: 1px solid #487996;
+}
+.form-input input {
+  border: none;
+  display: block;
+  margin-bottom: 4px;
+}
+.form-input input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+
+  color: #2b2b2b;
+}
+.select-form__subtitle {
+  padding-bottom: 4px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  color: #2b2b2b;
+  border-bottom: 1px solid #487996;
+}
+.options-container {
+  margin-top: 12px;
+  padding-bottom: 13px;
+  width: 100%;
+  max-height: 0;
+  opacity: 0;
+  border-bottom: 1px solid rgba(72, 121, 150, 0.5);
+}
+
+.select-box .options-container.active {
+  max-height: 100%;
+  opacity: 1;
+}
+
+.option,
+.selected {
+  cursor: pointer;
+}
+.option:hover {
+  background-color: rgba(72, 121, 150, 0.5);
+}
+.option:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.option label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  cursor: pointer;
+
+  color: #2b2b2b;
+}
+
+.select-box .radio {
+  display: none;
+}

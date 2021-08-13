@@ -36,33 +36,50 @@
             placeholder="Email"
           />
         </div>
-        <div class="form-input">
-          <select name="plastic">
-            <option value="no">Види пластика</option>
-            <option value="300">300 мікрон</option>
-            <option value="200">200 мікрон</option>
-            <option value="100">100 мікрон</option>
-            <option value="support">Труднощі у виборі - ми допоможемо</option>
-          </select>
-        </div>
-        <div class="form-input">
-          <select name="quality">
-            <option value="no">Якість друку</option>
-            <option value="300">300 мікрон</option>
-            <option value="200">200 мікрон</option>
-            <option value="100">100 мікрон</option>
-            <option value="support">Труднощі у виборі - ми допоможемо</option>
-          </select>
-        </div>
-        <div class="form-input">
-          <select name="color">
-            <option value="no">Колір</option>
-            <option value="300">300 мікрон</option>
-            <option value="200">200 мікрон</option>
-            <option value="100">100 мікрон</option>
-            <option value="support">Труднощі у виборі - ми допоможемо</option>
-          </select>
-        </div>
+          
+
+          <div class="select-box">
+            <p class="selected select-form__subtitle">Види пластика</p>
+            <div class="options-container active">
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="300"
+                  name="plastic-category"
+                />
+                <label for="300">300 мікрон</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="200"
+                  name="plastic-category"
+                />
+                <label for="200">200 мікрон</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="100"
+                  name="plastic-category"
+                />
+                <label for="100">100 мікрон</label>
+              </div>
+              <div class="option">
+                <input
+                  type="radio"
+                  class="radio"
+                  id="support"
+                  name="plastic-category"
+                />
+                <label for="support">Труднощі у виборі - ми допоможемо</label>
+              </div>
+            </div>
+          </div>
+
         <div class="form-input">
           <label for="comment">Повідомлення</label>
           <textarea
@@ -114,5 +131,6 @@
         <div class="photo-puzzle"></div>
       </address>
     </section>
+    <script src="./js/options.js"></script>
   </body>
 </html>
